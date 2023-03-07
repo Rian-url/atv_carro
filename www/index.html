@@ -20,8 +20,9 @@
     <div class="container">
         <div class="cad">
             <form action="">
-                <label>Digite a marca do carro:</label> <br>
-               <select name="marcas" id="marcas">
+                <label>Selecione a marca do carro:</label> <br>
+               <select name="marcas" id="marcas" >
+                    <option value="Selecione"Selecione</option>
                 <option value="Honda">Honda</option>
                 <option value="Fiat">Fiat</option>
                 <option value="Toyota">Toyota</option>
@@ -36,8 +37,7 @@
                 <input type="number" id="d1"> <br>
                 <label>Digite a quantidade de gasolina gasta nesse persurso em L:</label> <br>
                 <input type="number" id="l1"> <br>
-                <input type="submit" value="Enviar" onclick="Calc()">
-
+                <button type="submit" class="btn btn-dark" onclick="Calc()" id="btn">Enviar</button>
                 <h1 id="content"></h1>
             </form>
         </div>
