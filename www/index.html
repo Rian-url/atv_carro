@@ -35,7 +35,7 @@
                 <input type="number" id="d1" required> <br>
                 <label>Digite a quantidade de <br> gasolina gasta nesse persurso:<br> (em Litros)</label> <br>
                 <input type="number" id="l1" required> <br>
-                <button type="submit" class="btn btn-dark" onclick="Calc()" id="btn">Enviar</button>
+                <button type="submit" class="btn btn-dark" onclick="Calc();MarcarTabela()" id="btn">Enviar</button>
                 <h1 id="content"></h1>
             </form>
         </div>
@@ -48,21 +48,21 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr id="vl1">
       <th scope="row"><= 20KM/L</th>
       <td>EXTREMAMENTE ECONÔMICO</td>
     </tr>
-    <tr>
+    <tr id="vl2">
       <th scope="row"><= 12KM/L 
       >20KM/L</th>
       <td>ECONÔMICO</td>
     </tr>
-    <tr>
+    <tr id="vl3">
       <th scope="row">8KM/L 
       >12KM/L</th>
       <td colspan="2">NORMAL</td>
     </tr>
-    <tr>
+    <tr id="vl4">
       <th scope="row"> >8KM/L</th>
       <td>ALTO CONSUMO</td>
     </tr>
